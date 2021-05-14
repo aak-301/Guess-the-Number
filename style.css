@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  /* //rgb(240, 217, 217); */
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 70px 0;
+}
+.btn p {
+  color: white;
+  font-size: 20px;
+}
+.btn {
+  width: 90px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: rgb(228, 58, 58);
+  box-shadow: 2px 2px 4px 3px #888888;
+}
+.difficulty-selection {
+  margin: 7% 0;
+}
+.top > div {
+  padding: 20px;
+  align-items: center;
+}
+.top div h2 {
+  color: white;
+  font-weight: 300;
+  font-size: 4em;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.top h4 {
+  text-align: center;
+  color: rgb(218, 69, 69);
+  font-size: 20px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(146, 143, 143, 0),
+    rgba(240, 228, 228, 0.75),
+    rgba(146, 143, 143, 0)
+  );
+  z-index: -1;
+}
+.middle {
+  margin: 60px 0;
+}
+.middle .guessed {
+  width: 20px;
+  position: relative;
+  left: 50%;
+  top: -25px;
+  z-index: 1;
+}
+
+.middle .guessed p {
+  border-radius: 0 10px 0 10px;
+  width: 50px;
+  text-align: center;
+  background-color: rgb(14, 18, 236);
+  color: aliceblue;
+  font-size: 40px;
+}
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bottom .input {
+  display: flex;
+  flex-direction: column;
+}
+.bottom .input .input-label {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid red;
+  background-color: rgb(14, 5, 5);
+  color: white;
+  outline: none;
+}
+.bottom .input .check {
+  margin: 20px 0;
+}
+.bottom .input .replay {
+  margin: 20px 0;
+}
+
+.bottom .para p {
+  padding: 25px;
+  font-size: 25px;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 600px) {
+  .top div h2 {
+    font-size: 30px;
+  }
+  .button {
+    flex-direction: column;
+    padding: 5% 35% 0;
+    justify-content: space-around;
+  }
+  button {
+    margin: 20px 0;
+  }
+  .top h4 {
+    font-size: 19px;
+  }
+  .bottom .input {
+    padding-left: 40px;
+  }
+  .bottom .para p {
+    padding: 10px;
+    margin: 35px 0;
+    font-size: 12px;
+  }
+  .bottom .input .check {
+    margin: 20px 0;
+  }
+  .btn {
+    width: 55px;
+    height: 40px;
+    padding: 8px;
+  }
+  .btn p {
+    text-align: center;
+    font-size: 12px;
+  }
+  .bottom .input .input-label {
+    width: 55%;
+    padding: 12px 0px;
+    margin: 4px 0;
+  }
+}

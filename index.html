@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="top">
+      <div>
+        <h2><u>Guess The Number</u></h2> </div>
+        <h4 class="difficulty-selection">Select Defficulty</h4>
+      </div>
+        <div class="button">
+          <button class="easy btn"><p class="text">easy</p></button>
+          <button class="hard btn"><p class="text">hard</p></button>
+        </div>
+        <h4 class="difficulty-level">( select a number between 1 and 20 )</h4>
+      </div>
+    </section>
+    <section class="middle">
+      <div>
+        <hr />
+        <div class="guessed"><p class="gno">?</p></div>
+      </div>
+    </section>
+    <section class="bottom">
+      <div class="input">
+        <input
+          type="number"
+          class="input-label"
+          placeholder="start guessing"
+          autofocus
+        />
+        <button class="check btn"><p class="btn-text">check</p></button>
+        <button class="btn replay"><p class="btn-text">Replay</p></button>
+      </div>
+      <div class="para">
+        <p class="message">🔎 Start guessing...</p>
+        <p>🏁 Score: <span class="score">20</span></p>
+        <p>🔥 High Score: <span class="high-score">0</span></p>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript"  src="script.js" charset="utf-8"></script>
+</html>
